@@ -58,3 +58,7 @@ var Marshal = func(v interface{}) (io.Reader, error) {
   }
   return bytes.NewReader(b), nil
 }
+
+func Describe(i interface{}) {
+	fmt.Printf("(%v, %T)\n", i, i)
+}
